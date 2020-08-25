@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>DYNAMIC HTML STRING</title>
-</head>
-<body>
-<script type="text/javascript">
-    let mystring = "<p>Hello!</p> <strong>My friend</strong>";
-    document.write(mystring);
-</script>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>DYNAMIC HTML STRING</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			let mystring = "<p>Hello!</p> <strong>My friend</strong>";
+			document.write(mystring);
+
+			let auxDate = new Date();
+			let auxYear = auxDate.getFullYear();
+			let auxString = "<p>Hello!</p> <strong>My friend,</strong> we are in the year " + `${auxYear}`;
+			document.write(auxString);
+		</script>
+	</body>
 </html>
